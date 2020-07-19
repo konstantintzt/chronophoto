@@ -1,18 +1,20 @@
 # Chronophoto
 
-With this program, you'll be able to generate a picture using the [chronophotography](https://en.wikipedia.org/wiki/Chronophotography) technique. You can choose whether you prefer to use a sequence of images, or a video. In both cases, the camera should be completely still while you record. Keep in mind that I've only tested this on Windows yet.  
+With this program, you'll be able to generate a picture using the [chronophotography](https://en.wikipedia.org/wiki/Chronophotography) technique. You can choose whether you prefer to use a sequence of images, or a video. In both cases, the camera should be completely still while you record. Keep in mind that this program has only been tested on Windows yet.  
 
 Example of a chronophotograph from Wikipedia:  
+
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Chronophotography_sport_360_Cross-_%28Almost%29.jpg/1200px-Chronophotography_sport_360_Cross-_%28Almost%29.jpg" style="max-width:50%">
 
 ## Usage
 
-You need opencv-python to run this program. You can install it by running `pip install opencv-python` in your terminal.
+You need the [opencv-python](https://pypi.org/project/opencv-python/) library to run this program. You can install it by running `pip install opencv-python` in your terminal.  
+To run the program, run `py chronophoto.py` in your terminal, with the necessary arguments.
 
 ### Arguments
 
 **For all input**
- - `--inputpath` (required): The path to the video or folder containing the image sequence.
+ - `--inputpath` (required) : The path to the video or to the folder containing the image sequence.
  - `--show` (optional) : If you add this flag the final image will be shown in an opencv window.
 
 **For video input**
@@ -25,4 +27,4 @@ You need opencv-python to run this program. You can install it by running `pip i
 
 ## Output
 
-Once you run the program, an image file called "output_img.\<filetype>" will be created in the same directory as the input file(s).
+Once you run the program, an image file called "output_img.\<filetype>" will be created in the directory of the input file(s).
