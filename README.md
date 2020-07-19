@@ -1,4 +1,4 @@
-# Chronophotography
+# Chronophoto
 
 With this program, you'll be able to generate a picture using the [chronophotography](https://en.wikipedia.org/wiki/Chronophotography) technique. You can choose whether you prefer to use a sequence of images, or a video. In both cases, the camera should be completely still while you record. Keep in mind that I've only tested this on Windows yet.  
 
@@ -13,7 +13,6 @@ You need opencv-python to run this program. You can install it by running `pip i
 
 **For all input**
  - `--inputpath` (required): The path to the video or folder containing the image sequence.
- - `--output` (required) : The extension of the output file. Default is PNG.
  - `--show` (optional) : If you add this flag the final image will be shown in an opencv window.
 
 **For video input**
@@ -26,4 +25,4 @@ You need opencv-python to run this program. You can install it by running `pip i
 
 ## Output
 
-Once you run the program, an image file called "output_img.\<output>" will be created in the same directory as the input file(s).
+Once you run the program, an image file called "output_img.\<filetype>" will be created in the same directory as the input file(s).
